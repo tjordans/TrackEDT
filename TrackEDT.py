@@ -127,7 +127,7 @@ def parse_data(data):
     return cleanSentences, author
 
 def write_header(outpath):
-    header = "NAME FILE" + "\t" + "EDIT TYPE" + "\t" + "TEXT" + "\t" + "SENTENCE" + "\t" + "AUTHOR"+ "\t" + "LENGTH" + "\n"
+    header = "FILE NAME" + "\t" + "EDIT TYPE" + "\t" + "TEXT" + "\t" + "SENTENCE" + "\t" + "AUTHOR"+ "\t" + "LENGTH" + "\n"
     with open(os.path.join(outpath, "_results.txt"), "a") as f:
         f.write(header)
 
